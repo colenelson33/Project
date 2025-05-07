@@ -87,6 +87,8 @@ if __name__ == '__main__':
 
         keyA = get_current_key(uid_str)
         if keyA is None:
+            
+            log_attempt(conn, uid_str, 0)
             display.clear()
             display.write("Unknown UID!")
         else:    
